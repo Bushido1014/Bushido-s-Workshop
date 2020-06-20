@@ -1,5 +1,5 @@
 # Bushido-s-Workshop
-<<Nothing to say>>
+$$Nothing to say$$
 ------------------
 ------------------
 ------------------
