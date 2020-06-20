@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.ExceptionServices;
-//using Longo.Puto;
 
 namespace Practica_SQL
 {
@@ -39,7 +38,7 @@ namespace Practica_SQL
             if (grid_Main.Columns.Count > 0)
                 MessageBox.Show("La DB ya está abierta");
             else
-                getTableToGrid(querySelect());
+                getAndShowTable(querySelect());
         }
         private void but_CerrarDB_Click(object sender, EventArgs e)
         {
@@ -56,8 +55,8 @@ namespace Practica_SQL
                 MessageBox.Show("No se ha seleccionado ninguna entrada");
             else
             {
-                deleteEntry(queryDelete(grid_Main.CurrentRow.Cells[0].Value.ToString()));
-                getTableToGrid(querySelect());
+                executeNonQuery(queryDelete(grid_Main.CurrentRow.Cells[0].Value.ToString()));
+                getAndShowTable(querySelect());
             }
         }
         private void but_Editar_Click(object sender, EventArgs e)
@@ -72,8 +71,8 @@ namespace Practica_SQL
                 txt_Nombre.Text = grid_Main.CurrentRow.Cells[1].Value.ToString();
                 txt_Edad.Text = grid_Main.CurrentRow.Cells[2].Value.ToString();
 
-                deleteEntry(queryDelete(grid_Main.CurrentRow.Cells[0].Value.ToString()));
-                getTableToGrid(querySelect());
+                executeNonQuery(queryDelete(grid_Main.CurrentRow.Cells[0].Value.ToString()));
+                getAndShowTable(querySelect());
             }
         }
         private void but_Agregar_Click(object sender, EventArgs e)
@@ -82,8 +81,8 @@ namespace Practica_SQL
                 MessageBox.Show("Debe cargar la base de datos primero");
             else
             {
-                insertEntry(queryInsert(txt_ID.Text, txt_Nombre.Text, txt_Edad.Text));
-                getTableToGrid(querySelect());
+                executeNonQuery(queryInsert(txt_ID.Text, txt_Nombre.Text, txt_Edad.Text));
+                getAndShowTable(querySelect());
 
                 limpiarTextBoxes();
             }
@@ -93,9 +92,9 @@ namespace Practica_SQL
             if (grid_Main.Rows.Count == 0)
                 MessageBox.Show("Debe cargar la base de datos primero");
             else if(txt_Buscar.Text == "")
-                getTableToGrid(querySelect());
+                getAndShowTable(querySelect());
             else
-                getTableToGrid(querySelect(txt_Buscar.Text));
+                getAndShowTable(querySelect(txt_Buscar.Text));
         }
         string queryInsert(string ID, string Nombre, string Edad)
         {
@@ -114,7 +113,7 @@ namespace Practica_SQL
         {
             return "Select * from tbl_Personas where Nombre = '" + Nombre + "'";
         }
-        void getTableToGrid(string stringQuery)
+        void getAndShowTable(string stringQuery)
         {
             SqlCommand objCommand = new SqlCommand(stringQuery, objConnection);
             SqlDataAdapter objDataAdapter = new SqlDataAdapter(objCommand);
@@ -125,7 +124,7 @@ namespace Practica_SQL
             grid_Main.DataSource = tbl_Main;
             grid_Main.ClearSelection();
         }
-        void insertEntry(string stringQuery)
+        void executeNonQuery(string stringQuery)
         {
             objConnection.Open();
             try
@@ -137,13 +136,6 @@ namespace Practica_SQL
             {
                 MessageBox.Show("Ya se encuentra el ID en la tabla");
             }
-            objConnection.Close();
-        }
-        void deleteEntry(string stringQuery)
-        {
-            objConnection.Open();
-            SqlCommand objCommand = new SqlCommand(stringQuery, objConnection);
-            objCommand.ExecuteNonQuery();
             objConnection.Close();
         }
         void limpiarTextBoxes()
