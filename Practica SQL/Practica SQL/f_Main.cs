@@ -22,6 +22,7 @@ namespace Practica_SQL
         public f_Main()
         {
             InitializeComponent();
+            //ezeputo
         }
         private void but_conectar_Click(object sender, EventArgs e)
         {
