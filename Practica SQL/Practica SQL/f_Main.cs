@@ -23,16 +23,6 @@ namespace Practica_SQL
         {
             InitializeComponent();
         }
-        private void but_conectar_Click(object sender, EventArgs e)
-        {
-            objConnection.Open();
-            MessageBox.Show("Conexion a DB \"" + objConnection.Database + "\" ha sido exitosa");
-        }
-        private void but_desconectar_Click(object sender, EventArgs e)
-        {
-            objConnection.Close();
-            MessageBox.Show("Desconexion de DB \"" + objConnection.Database + "\" ha sido exitosa");
-        }
         private void but_AbrirDB_Click(object sender, EventArgs e)
         {
             if (grid_Main.Columns.Count > 0)
