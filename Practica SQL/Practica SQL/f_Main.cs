@@ -22,16 +22,40 @@ namespace Practica_SQL
         public f_Main()
         {
             InitializeComponent();
+
+            createDBandTable();
         }
-        private void but_conectar_Click(object sender, EventArgs e)
+        void createDBandTable()
         {
-            objConnection.Open();
-            MessageBox.Show("Conexion a DB \"" + objConnection.Database + "\" ha sido exitosa");
-        }
-        private void but_desconectar_Click(object sender, EventArgs e)
-        {
-            objConnection.Close();
-            MessageBox.Show("Desconexion de DB \"" + objConnection.Database + "\" ha sido exitosa");
+            try
+            {
+                SqlConnection sqlConnection = new SqlConnection("server= localhost; integrated security= true");
+                SqlCommand sqlCommand = new SqlCommand("create database db_testing", sqlConnection);
+                sqlConnection.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnection.Close();
+
+                MessageBox.Show("La database a la que se coenctará fue creada con éxito");
+            }
+            catch
+            {
+                MessageBox.Show("La database a la que se conectará existe");
+            }
+
+            try
+            {
+                SqlConnection sqlConnection = new SqlConnection("server= localhost; database=db_testing; integrated security= true");
+                SqlCommand sqlCommand = new SqlCommand("create table tbl_Personas", sqlConnection);
+                sqlConnection.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnection.Close();
+
+                MessageBox.Show("La table que usará fue creada con éxito");
+            }
+            catch
+            {
+                MessageBox.Show("La table que usará existe");
+            }
         }
         private void but_AbrirDB_Click(object sender, EventArgs e)
         {

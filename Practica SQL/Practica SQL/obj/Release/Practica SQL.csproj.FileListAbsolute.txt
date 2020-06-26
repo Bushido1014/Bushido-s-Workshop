@@ -1,0 +1,10 @@
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\bin\Release\Practica SQL.exe.config
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\bin\Release\Practica SQL.exe
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\bin\Release\Practica SQL.pdb
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica SQL.csprojAssemblyReference.cache
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica_SQL.f_Main.resources
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica_SQL.Properties.Resources.resources
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica SQL.csproj.GenerateResource.cache
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica SQL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica SQL.exe
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Release\Practica SQL.pdb

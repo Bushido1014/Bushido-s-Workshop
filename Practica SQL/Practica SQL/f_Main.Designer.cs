@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.but_Conectar = new System.Windows.Forms.Button();
-            this.but_Desconectar = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.but_AbrirDB = new System.Windows.Forms.Button();
             this.grid_Main = new System.Windows.Forms.DataGridView();
             this.but_Buscar = new System.Windows.Forms.Button();
@@ -47,34 +47,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.grid_Main)).BeginInit();
             this.SuspendLayout();
             // 
-            // but_Conectar
-            // 
-            this.but_Conectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_Conectar.Location = new System.Drawing.Point(27, 12);
-            this.but_Conectar.Name = "but_Conectar";
-            this.but_Conectar.Size = new System.Drawing.Size(206, 63);
-            this.but_Conectar.TabIndex = 0;
-            this.but_Conectar.Text = "Conectar";
-            this.but_Conectar.UseVisualStyleBackColor = true;
-            this.but_Conectar.Click += new System.EventHandler(this.but_conectar_Click);
-            // 
-            // but_Desconectar
-            // 
-            this.but_Desconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_Desconectar.Location = new System.Drawing.Point(27, 81);
-            this.but_Desconectar.Name = "but_Desconectar";
-            this.but_Desconectar.Size = new System.Drawing.Size(206, 63);
-            this.but_Desconectar.TabIndex = 1;
-            this.but_Desconectar.Text = "Desconectar";
-            this.but_Desconectar.UseVisualStyleBackColor = true;
-            this.but_Desconectar.Click += new System.EventHandler(this.but_desconectar_Click);
-            // 
             // but_AbrirDB
             // 
             this.but_AbrirDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_AbrirDB.Location = new System.Drawing.Point(27, 198);
+            this.but_AbrirDB.Location = new System.Drawing.Point(27, 12);
             this.but_AbrirDB.Name = "but_AbrirDB";
-            this.but_AbrirDB.Size = new System.Drawing.Size(206, 63);
+            this.but_AbrirDB.Size = new System.Drawing.Size(206, 46);
             this.but_AbrirDB.TabIndex = 2;
             this.but_AbrirDB.Text = "Abrir DB";
             this.but_AbrirDB.UseVisualStyleBackColor = true;
@@ -87,19 +65,35 @@
             this.grid_Main.AllowUserToResizeColumns = false;
             this.grid_Main.AllowUserToResizeRows = false;
             this.grid_Main.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grid_Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_Main.Location = new System.Drawing.Point(239, 12);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid_Main.DefaultCellStyle = dataGridViewCellStyle2;
+            this.grid_Main.Location = new System.Drawing.Point(248, 12);
             this.grid_Main.Name = "grid_Main";
             this.grid_Main.ReadOnly = true;
             this.grid_Main.RowHeadersVisible = false;
             this.grid_Main.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_Main.Size = new System.Drawing.Size(842, 506);
+            this.grid_Main.Size = new System.Drawing.Size(833, 384);
             this.grid_Main.TabIndex = 4;
             // 
             // but_Buscar
             // 
             this.but_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_Buscar.Location = new System.Drawing.Point(27, 622);
+            this.but_Buscar.Location = new System.Drawing.Point(27, 491);
             this.but_Buscar.Name = "but_Buscar";
             this.but_Buscar.Size = new System.Drawing.Size(206, 46);
             this.but_Buscar.TabIndex = 5;
@@ -110,7 +104,7 @@
             // txt_Buscar
             // 
             this.txt_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.txt_Buscar.Location = new System.Drawing.Point(248, 627);
+            this.txt_Buscar.Location = new System.Drawing.Point(248, 496);
             this.txt_Buscar.Name = "txt_Buscar";
             this.txt_Buscar.Size = new System.Drawing.Size(833, 35);
             this.txt_Buscar.TabIndex = 6;
@@ -118,7 +112,7 @@
             // but_Agregar
             // 
             this.but_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_Agregar.Location = new System.Drawing.Point(27, 561);
+            this.but_Agregar.Location = new System.Drawing.Point(27, 430);
             this.but_Agregar.Name = "but_Agregar";
             this.but_Agregar.Size = new System.Drawing.Size(206, 46);
             this.but_Agregar.TabIndex = 7;
@@ -129,7 +123,7 @@
             // txt_ID
             // 
             this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.txt_ID.Location = new System.Drawing.Point(248, 566);
+            this.txt_ID.Location = new System.Drawing.Point(248, 435);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(265, 35);
             this.txt_ID.TabIndex = 8;
@@ -137,7 +131,7 @@
             // txt_Nombre
             // 
             this.txt_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.txt_Nombre.Location = new System.Drawing.Point(532, 566);
+            this.txt_Nombre.Location = new System.Drawing.Point(532, 435);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(265, 35);
             this.txt_Nombre.TabIndex = 9;
@@ -145,7 +139,7 @@
             // txt_Edad
             // 
             this.txt_Edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.txt_Edad.Location = new System.Drawing.Point(816, 566);
+            this.txt_Edad.Location = new System.Drawing.Point(816, 435);
             this.txt_Edad.Name = "txt_Edad";
             this.txt_Edad.Size = new System.Drawing.Size(265, 35);
             this.txt_Edad.TabIndex = 10;
@@ -153,7 +147,7 @@
             // lbl_ID
             // 
             this.lbl_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lbl_ID.Location = new System.Drawing.Point(245, 531);
+            this.lbl_ID.Location = new System.Drawing.Point(245, 400);
             this.lbl_ID.Name = "lbl_ID";
             this.lbl_ID.Size = new System.Drawing.Size(268, 32);
             this.lbl_ID.TabIndex = 11;
@@ -163,7 +157,7 @@
             // lbl_Nombre
             // 
             this.lbl_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lbl_Nombre.Location = new System.Drawing.Point(529, 531);
+            this.lbl_Nombre.Location = new System.Drawing.Point(529, 400);
             this.lbl_Nombre.Name = "lbl_Nombre";
             this.lbl_Nombre.Size = new System.Drawing.Size(268, 32);
             this.lbl_Nombre.TabIndex = 12;
@@ -173,7 +167,7 @@
             // lbl_Edad
             // 
             this.lbl_Edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lbl_Edad.Location = new System.Drawing.Point(813, 531);
+            this.lbl_Edad.Location = new System.Drawing.Point(813, 400);
             this.lbl_Edad.Name = "lbl_Edad";
             this.lbl_Edad.Size = new System.Drawing.Size(268, 32);
             this.lbl_Edad.TabIndex = 13;
@@ -183,7 +177,7 @@
             // but_Editar
             // 
             this.but_Editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_Editar.Location = new System.Drawing.Point(27, 472);
+            this.but_Editar.Location = new System.Drawing.Point(27, 350);
             this.but_Editar.Name = "but_Editar";
             this.but_Editar.Size = new System.Drawing.Size(206, 46);
             this.but_Editar.TabIndex = 14;
@@ -194,7 +188,7 @@
             // but_Eliminar
             // 
             this.but_Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_Eliminar.Location = new System.Drawing.Point(27, 420);
+            this.but_Eliminar.Location = new System.Drawing.Point(27, 298);
             this.but_Eliminar.Name = "but_Eliminar";
             this.but_Eliminar.Size = new System.Drawing.Size(206, 46);
             this.but_Eliminar.TabIndex = 15;
@@ -205,9 +199,9 @@
             // but_CerrarDB
             // 
             this.but_CerrarDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.but_CerrarDB.Location = new System.Drawing.Point(27, 267);
+            this.but_CerrarDB.Location = new System.Drawing.Point(27, 64);
             this.but_CerrarDB.Name = "but_CerrarDB";
-            this.but_CerrarDB.Size = new System.Drawing.Size(206, 63);
+            this.but_CerrarDB.Size = new System.Drawing.Size(206, 46);
             this.but_CerrarDB.TabIndex = 16;
             this.but_CerrarDB.Text = "Cerrar DB";
             this.but_CerrarDB.UseVisualStyleBackColor = true;
@@ -217,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 680);
+            this.ClientSize = new System.Drawing.Size(1104, 548);
             this.Controls.Add(this.but_CerrarDB);
             this.Controls.Add(this.but_Eliminar);
             this.Controls.Add(this.but_Editar);
@@ -232,8 +226,6 @@
             this.Controls.Add(this.but_Buscar);
             this.Controls.Add(this.grid_Main);
             this.Controls.Add(this.but_AbrirDB);
-            this.Controls.Add(this.but_Desconectar);
-            this.Controls.Add(this.but_Conectar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "f_Main";
@@ -246,9 +238,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button but_Conectar;
-        private System.Windows.Forms.Button but_Desconectar;
         private System.Windows.Forms.Button but_AbrirDB;
         private System.Windows.Forms.DataGridView grid_Main;
         private System.Windows.Forms.Button but_Buscar;
