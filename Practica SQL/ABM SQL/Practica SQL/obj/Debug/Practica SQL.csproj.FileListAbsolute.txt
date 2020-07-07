@@ -1,0 +1,20 @@
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\bin\Debug\Practica SQL.exe.config
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\bin\Debug\Practica SQL.exe
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\bin\Debug\Practica SQL.pdb
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica SQL.csprojAssemblyReference.cache
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica_SQL.Properties.Resources.resources
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica SQL.csproj.GenerateResource.cache
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica SQL.exe
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica SQL.pdb
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica SQL.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel Amorosino\Documents\Visual Studio 2019\Projects\Practica SQL\Practica SQL\obj\Debug\Practica_SQL.f_Main.resources
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\bin\Debug\Practica SQL.exe.config
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\bin\Debug\Practica SQL.exe
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\bin\Debug\Practica SQL.pdb
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica SQL.csprojAssemblyReference.cache
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica_SQL.f_Main.resources
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica_SQL.Properties.Resources.resources
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica SQL.csproj.GenerateResource.cache
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica SQL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica SQL.exe
+D:\Proyectos\Programacion\C#\Practica SQL\Practica SQL\obj\Debug\Practica SQL.pdb

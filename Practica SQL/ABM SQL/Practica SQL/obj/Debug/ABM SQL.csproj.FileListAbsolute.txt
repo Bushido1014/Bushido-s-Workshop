@@ -1,0 +1,9 @@
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\bin\Debug\Practica SQL.exe.config
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\bin\Debug\Practica SQL.exe
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\bin\Debug\Practica SQL.pdb
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\obj\Debug\Practica_SQL.UI_Main.resources
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\obj\Debug\Practica_SQL.Properties.Resources.resources
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\obj\Debug\ABM SQL.csproj.GenerateResource.cache
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\obj\Debug\ABM SQL.csproj.CoreCompileInputs.cache
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\obj\Debug\Practica SQL.exe
+D:\Proyectos\Programacion\C#\ABM SQL\Practica SQL\obj\Debug\Practica SQL.pdb
