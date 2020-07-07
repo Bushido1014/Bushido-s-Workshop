@@ -16,7 +16,7 @@ namespace Practica_SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new f_Main());
+            Application.Run(new UI_Main());
         }
     }
 }
